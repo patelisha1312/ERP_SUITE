@@ -1,0 +1,244 @@
+/* PAGE */
+
+.inventory-page {
+
+  display: flex;
+
+  min-height: 100vh;
+
+}
+
+
+/* CONTENT */
+
+.inventory-content {
+
+  margin-left: 260px;
+
+  width: calc(100% - 260px);
+
+  padding: 30px;
+
+  min-height: 100vh;
+
+  box-sizing: border-box;
+
+}
+
+
+/* TITLE */
+
+.inventory-title {
+
+  margin-bottom: 25px;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+}
+
+
+/* SUMMARY */
+
+.inventory-summary {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    );
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+
+}
+
+
+/* SUMMARY CARD */
+
+.inventory-card-summary {
+
+  padding: 25px;
+
+  border-radius: 24px;
+
+  transition: 0.3s;
+
+}
+
+
+.inventory-card-summary:hover {
+
+  transform:
+    translateY(-5px);
+
+}
+
+
+.inventory-card-summary h2 {
+
+  margin-bottom: 15px;
+
+  color: #0f172a;
+
+}
+
+
+.inventory-card-summary p {
+
+  color: #475569;
+
+  font-size: 18px;
+
+}
+
+
+/* FORM */
+
+.inventory-form {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  margin-bottom: 35px;
+
+}
+
+
+/* INPUT */
+
+.inventory-input {
+
+  width: 100%;
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+
+  border-radius: 14px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+
+}
+
+
+/* BUTTON */
+
+.inventory-button {
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+
+}
+
+
+.inventory-button:hover {
+
+  transform:
+    translateY(-2px);
+
+}
+
+
+/* PRODUCT GRID */
+
+.product-list {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap: 25px;
+
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+
+  padding: 25px;
+
+  border-radius: 24px;
+
+  transition: 0.3s;
+
+}
+
+
+.product-card:hover {
+
+  transform:
+    translateY(-5px);
+
+}
+
+
+.product-card h3 {
+
+  margin-bottom: 15px;
+
+  color: #0f172a;
+
+  font-size: 28px;
+
+}
+
+
+.product-card p {
+
+  margin-bottom: 10px;
+
+  color: #475569;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .inventory-content {
+
+    margin-left: 0;
+
+    width: 100%;
+
+    padding:
+      80px 15px 20px 15px;
+
+  }
+
+  .inventory-title {
+
+    font-size: 30px;
+
+  }
+
+}
